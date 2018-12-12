@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="62dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/eur" />
+
+    <TextView
+        android:id="@+id/nameId"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:text="EUR"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/infoID"
+        android:layout_width="88dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:text="Euro"
+        android:textAlignment="textStart"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/nameId" />
+
+    <TextView
+        android:id="@+id/vesz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="Vasarlas"
+        app:layout_constraintBaseline_toBaselineOf="@+id/vasarID"
+        app:layout_constraintEnd_toStartOf="@+id/vasarID" />
+
+    <TextView
+        android:id="@+id/elad"
+        android:layout_width="47dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="32dp"
+        android:text="Eladas"
+        app:layout_constraintBaseline_toBaselineOf="@+id/eladasId"
+        app:layout_constraintEnd_toStartOf="@+id/eladasId" />
+
+    <TextView
+        android:id="@+id/vasarID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/eladasId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vasarID" />
+</android.support.constraint.ConstraintLayout>
